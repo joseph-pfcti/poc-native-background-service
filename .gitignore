@@ -1,0 +1,102 @@
+## Build results
+bin/
+obj/
+out/
+[Oo]utput/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## VS Code settings
+.vscode/
+!.vscode/settings.json
+
+## Rider settings
+.idea/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## Logs
+*.log
+logs/
+log/
+*.tlog
+
+## DotCover
+*.dotCover
+
+## Database
+*.mdf
+*.ldf
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Others
+*.dbmdl
+*.bak
+*.sql
+*.sqlite
+*.pdb
+*.cache
+*.tmp
+
+## Auto-generated secrets
+secrets.json
+
+## Local configs
+.env
+*.local.json
+*.dev.json
+
+## Publish output
+wwwroot/dist/
+.publish/
+*.PublishSettings
+
+## User secrets (if using Secret Manager)
+**/secrets.json
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuspec
+
+# Dotnet CLI
+.vs/
+*.vspscc
+global.json
+
+# Rider
+.idea/
+*.sln.iml
+
+# Optional: ignore reverseproxy config (optional)
+reverseproxy.dev.json
+reverseproxy.local.json
+
+# Optional: docker artifacts
+**/docker-compose.*
+**/Dockerfile.*
+docker-compose.override.yml
+.docker/
+
+# Optional: output dirs from scripts
+tools/
+scripts/out/
+temp/
+
+# Optional: coverage tools
+coverage/
+*.lcov
+*.coverage
+*.coveragexml
