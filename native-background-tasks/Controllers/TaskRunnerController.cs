@@ -10,10 +10,10 @@ namespace NativeBackgroundTasks.Controllers
         private readonly RandomStringService _randomStringService = randomStringService;
 
         [HttpGet]
-        public async Task<IActionResult> ExecuteTaskAsync(CancellationToken cancellationToken) 
+        public Task<IActionResult> ExecuteTaskAsync(CancellationToken cancellationToken) 
         {
             //await _randomStringService.GetRandomStringAsync(cancellationToken);
-            return Ok(new { randomString = _randomStringService.RandomString });
+            return Task.FromResult<IActionResult>(Ok(new { randomString = _randomStringService.RandomString }));
         }
     }
 }

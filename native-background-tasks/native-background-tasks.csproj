@@ -7,8 +7,4 @@
     <RootNamespace>NativeBackgroundTasks</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Cronos" Version="0.11.0" />
-  </ItemGroup>
-
 </Project>

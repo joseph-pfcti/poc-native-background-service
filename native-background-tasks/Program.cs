@@ -10,7 +10,7 @@ builder.Logging.AddConsole();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<RandomStringService>();
 builder.Services.AddSingleton<RandomStringService>();
-builder.Services.AddHostedService<RandomStringTask>();
+builder.Services.AddHostedService<RandomStringCron>();
 
 
 var app = builder.Build();
