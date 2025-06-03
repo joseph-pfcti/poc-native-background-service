@@ -11,7 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient<RandomStringService>();
 builder.Services.AddSingleton<RandomStringService>();
 builder.Services.AddHostedService<RandomStringCron>();
-
+builder.Services.AddSingleton<IQueue, QueueService>();
+builder.Services.AddHostedService<QueueCron>();
 
 var app = builder.Build();
 

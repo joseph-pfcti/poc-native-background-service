@@ -12,7 +12,7 @@ namespace NativeBackgroundTasks.Cronjobs
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation("Ejecutando tarea programada a las: {time}", DateTimeOffset.Now);
+            _logger.LogInformation("Ejecutando [RandomStringCron] a las: {time}", DateTimeOffset.Now);
 
             using PeriodicTimer timer = new(TimeSpan.FromMinutes(1));
 
@@ -20,7 +20,7 @@ namespace NativeBackgroundTasks.Cronjobs
             {
                 while (await timer.WaitForNextTickAsync(stoppingToken)) 
                 {
-                    _logger.LogInformation("Ejecutando llamado a las: {time}", DateTimeOffset.Now);
+                    _logger.LogInformation("Ejecutando [RandomStringCron] llamado a las: {time}", DateTimeOffset.Now);
                     await _randomStringService.GetRandomStringAsync(stoppingToken);
                 }
             }
